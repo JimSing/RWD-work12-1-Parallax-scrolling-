@@ -44,6 +44,9 @@
         let windowBottom = windowTop + innerHeight;
         // console.log(windowTop,windowBottom);
 
+
+        let windowMiddle = windowTop + innerHeight / 2;
+
         console.log(windowTop);
 
         menus.forEach((menu,number) =>{
@@ -55,7 +58,7 @@
 
             // console.log(number,itemTop,itemHeight);
 
-            if(windowTop >= itemTop && windowTop < (itemTop + itemHeight) ){
+            if(windowMiddle >= itemTop && windowMiddle < (itemTop + itemHeight) ){
                 console.log(`載入${number}中`);
                 menu.classList.add("active");
             }
