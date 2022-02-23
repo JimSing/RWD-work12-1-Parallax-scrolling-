@@ -1,0 +1,16 @@
+@mixin pad{
+    @media (max-width:768px) {
+        @content;
+    }
+}
+@mixin phone{
+    @media (max-width:767px) {
+        @content;
+    }
+}
+@mixin iphone6 {
+    @media (max-width:375px) {
+        @content;
+    }
+}
+    
